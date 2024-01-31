@@ -14,7 +14,7 @@ body {
 .sidebar__navigation {
     background: linear-gradient(90deg, rgba(92,3,3,1) 0%, rgba(157,38,73,1) 48%, rgba(87,182,204,1) 100%);
     border-radius: 8px;
-    padding: 16px 0 0 16px;
+    padding: 16px 0px 0px 0px;
 }
 
 .sidebar__navigation .logo {
@@ -76,7 +76,17 @@ body {
     padding: 20px 10px;
 }
 
-.library .library__button .fa-sharp {
+.fa-house {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.fa-magnifying-glass {
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+.fa-book {
     font-size: 20px;
     color:var(--color-words);
     margin-right: 10px;
