@@ -11,6 +11,7 @@
     --bg-components: maroon;
     --bg-subcomponents: black;
     --bg-subcomponents-effects: azure;
-    --color-words: turquoise;
     --color-words-button: azure;
+    --color-words-cards: black;
+    --color-words: turquoise;
 }

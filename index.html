@@ -49,7 +49,7 @@
 
                 <section class="section-playlist">
                     <div class="section-playlist__content">
-                        <span class="text title">Crie sua primeira playlist</span>
+                        <span class="text title">Crie sua primeira playlist dos seus personagens favoritos</span>
                         <span class="text subtitle">É fácil, vamos te ajudar.</span>
                         <button class="section-playlist__button">
                             <span>Criar playlist</span>
@@ -84,7 +84,7 @@
 
                     <button class="header__search">
                         <img src="src/assets/icons/search.png" alt="">
-                        <input id="search-input" type="text" maxlength="800" placeholder="O que você quer ouvir?">
+                        <input id="search-input" type="text" maxlength="800" placeholder="Escolha o personagem...">
                     </button>
                 </div>
                 
@@ -100,7 +100,7 @@
                     <div class="playlist">
                         <!-- COLOCAR O BOM DIA | BOA TARDE | BOA NOITE -->
                         <h1 id="greeting">Olá</h1>
-                        <h2 class="session">Navegar por todas as seções</h2>
+                        <h2 class="session">Navegar por todos os personagens</h2>
                     </div>
 
                     <!-- LIST ITEM 1 -->
@@ -111,15 +111,15 @@
                             <a href="" class="cards">
                             <div class="cards card1">
                                 <img src="./src/assets/playlist/1.jpeg" alt="" />
-                                <span>Boas festas</span>
+                                <span>Wolverine</span>
                             </div>
                             </a>
 
                             <!-- CARD 2 -->
                             <a href="" class="cards">
                             <div class="cards card2">
-                                <img src="./src/assets/playlist/2.png" alt="" />
-                                <span>Feitos para você</span>
+                                <img src="./src/assets/playlist/2.jpg" alt="" />
+                                <span>Batman</span>
                             </div>
                             </a>
 
@@ -127,7 +127,7 @@
                             <a href="" class="cards">
                             <div class="cards card3">
                                 <img src="./src/assets/playlist/3.jpeg" alt="" />
-                                <span>Lançamentos</span>
+                                <span>Hulk</span>
                             </div>
                             </a>
 
@@ -135,15 +135,15 @@
                             <a href="" class="cards">
                             <div class="cards card4">
                                 <img src="./src/assets/playlist/4.jpeg" alt="" />
-                                <span>Creators</span>
+                                <span>Homem de Ferro</span>
                             </div>
                             </a>
 
                             <!-- CARD 5 -->
                             <a href="" class="cards">
                             <div class="cards card5">
-                                <img src="./src/assets/playlist/5.jpeg" alt="" />
-                                <span>Para treinar</span>
+                                <img src="./src/assets/playlist/5.jpg" alt="" />
+                                <span>Thor</span>
                             </div>
                             </a>
 
@@ -151,7 +151,7 @@
                             <a href="" class="cards">
                             <div class="cards card6">
                                 <img src="./src/assets/playlist/6.jpeg" alt="" />
-                                <span>Podcasts</span>
+                                <span>Tartarugas Ninja</span>
                             </div>
                             </a>
 
@@ -159,7 +159,7 @@
                             <a href="" class="cards">
                             <div class="cards card7">
                                 <img src="./src/assets/playlist/7.jpeg" alt="" />
-                                <span>Sertanejo</span>
+                                <span>Super Man</span>
                             </div>
                             </a>
 
@@ -167,7 +167,7 @@
                             <a href="" class="cards">
                             <div class="cards card8">
                                 <img src="./src/assets/playlist/8.jpeg" alt="" />
-                                <span>Samba e pagode</span>
+                                <span>Ciclope</span>
                             </div>
                             </a>
 
@@ -175,7 +175,7 @@
                             <a href="" class="cards">
                             <div class="cards card9">
                                 <img src="./src/assets/playlist/9.jpeg" alt="" />
-                                <span>Funk</span>
+                                <span>Flash</span>
                             </div>
                             </a>
 
@@ -183,7 +183,7 @@
                             <a href="" class="cards">
                             <div class="cards card10">
                                 <img src="./src/assets/playlist/10.jpeg" alt="" />
-                                <span>MPB</span>
+                                <span>Capitão América</span>
                             </div>
                             </a>
 
@@ -191,7 +191,7 @@
                             <a href="" class="cards">
                             <div class="cards card11">
                                 <img src="./src/assets/playlist/11.jpeg" alt="" />
-                                <span>Rock</span>
+                                <span>Sub Zero</span>
                             </div>
                             </a>
 
@@ -199,7 +199,7 @@
                             <a href="" class="cards">
                             <div class="cards card12">
                                 <img src="./src/assets/playlist/12.jpeg" alt="" />
-                                <span>Hip Hop</span>
+                                <span>Scorpion</span>
                             </div>
                             </a>
 
@@ -207,7 +207,7 @@
                             <a href="" class="cards">
                             <div class="cards card13">
                                 <img src="./src/assets/playlist/13.jpeg" alt="" />
-                                <span>Indie</span>
+                                <span>Raiden</span>
                             </div>
                             </a>
 
@@ -215,7 +215,7 @@
                             <a href="" class="cards">
                             <div class="cards card14">
                                 <img src="./src/assets/playlist/14.jpeg" alt="" />
-                                <span>Relax</span>
+                                <span>Ryu</span>
                             </div>
                             </a>
 
@@ -223,7 +223,7 @@
                             <a href="" class="cards">
                             <div class="cards card15">
                                 <img src="./src/assets/playlist/15.jpeg" alt="" />
-                                <span>Música Latina</span>
+                                <span>Ken</span>
                             </div>
                             </a>
                         </section>
@@ -231,25 +231,29 @@
                     </div>
                     </div>
 
-
-                    <div id="result-artist" class="hidden">
+                    <div class="hidden res" id="result-character">
                         <div class="grid-container">
-                            <div class="artist-card" id="">
+                            <div class="character-card" id="">
                             <div class="card-img">
-                                <img id="artist-img" class="artist-img" />
-                                <div class="play">
-                                <span class="fa fa-solid fa-play"></span>
+                                <img id="character-img" class="character-img" />
+                                <div class="simbol">
+                                <img src="./src/assets/playlist/simbols/png-superHero.png" class="simbolHero" alt="simbolHero"/>
                                 </div>
                             </div>
                             <div class="card-text">
-                                <a title="Foo Fighters" class="vst" href=""></a>
-                                <span class="artist-name" id="artist-name"></span>
-                                <span class="artist-categorie">Artista</span>
+                                <a title="" class="" href=""></a>
+                                <span class="character-name" id="character-name"></span>
+                                <span class="character-categorie">Super Héroi</span>
                                 </a>
                             </div>
                             </div>
                         </div>
+     
+                        <div id="descriptionHero" class="hidden">
+                            <span id="descriptionHeroSpan" class=""></span>
+                        </div>
                     </div>
+                    
 
                 </div>
             </div>
@@ -260,7 +264,7 @@
             <div class="text">
                 <p class="disclaimer-premium__title">Testar o Premium de graça</p>
                 <p class="disclaimer-premium__subtitle">
-                    Inscreva-se para curtir música ilimitada e podcasts só com alguns anúncios. Não precisa de cartão de crédito.
+                    Inscreva-se para curtir melhores personagens dos desenhos animados de todos os tempos. Não precisa de cartão de crédito.
                 </p>
             </div>
             <div class="button">

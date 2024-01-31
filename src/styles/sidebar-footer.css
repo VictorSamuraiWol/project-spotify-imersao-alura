@@ -12,7 +12,7 @@ body {
 }
 
 .sidebar__navigation {
-    background-color: var(--bg-components);
+    background: linear-gradient(90deg, rgba(92,3,3,1) 0%, rgba(157,38,73,1) 48%, rgba(87,182,204,1) 100%);
     border-radius: 8px;
     padding: 16px 0 0 16px;
 }
@@ -45,7 +45,7 @@ body {
 }
 
 .library {
-    background-color: var(--bg-components);
+    background: linear-gradient(90deg, rgba(92,3,3,1) 0%, rgba(157,38,73,1) 48%, rgba(87,182,204,1) 100%);
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
@@ -175,7 +175,6 @@ body {
     left: 0;
     right: 0;
     background: linear-gradient(90deg, rgba(92,3,3,1) 0%, rgba(157,38,73,1) 48%, rgba(87,182,204,1) 100%);
-    ;
     padding: 15px 40px;
     margin: 0px 65px 5px 10px;
     display: flex;
