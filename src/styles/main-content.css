@@ -43,7 +43,7 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
     padding: 16px;
     margin: 10px;
     border-radius: 8px;
-    background: linear-gradient(90deg, rgba(92,3,3,1) 0%, rgba(157,38,73,1) 48%, rgba(87,182,204,1) 100%);
+    background: linear-gradient(19deg, rgba(144,21,21,1) 15%, rgba(92,3,3,1) 50%, rgba(87,182,204,1) 85%);
 }
 
 .header__navigation .navigation {
@@ -145,7 +145,7 @@ none: Um elemento com display: none é completamente removido do fluxo de layout
     padding-top: 16px;
     margin: 10px;
     border-radius: 10px;
-    background: linear-gradient(90deg, rgba(92,3,3,1) 0%, rgba(157,38,73,1) 48%, rgba(87,182,204,1) 100%);
+    background: linear-gradient(19deg, rgba(144,21,21,1) 15%, rgba(92,3,3,1) 50%, rgba(87,182,204,1) 85%);
   }
   
   .playlist {

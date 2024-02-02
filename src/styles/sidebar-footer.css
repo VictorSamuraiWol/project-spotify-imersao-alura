@@ -12,7 +12,7 @@ body {
 }
 
 .sidebar__navigation {
-    background: linear-gradient(90deg, rgba(92,3,3,1) 0%, rgba(157,38,73,1) 48%, rgba(87,182,204,1) 100%);
+    background: linear-gradient(19deg, rgba(144,21,21,1) 15%, rgba(92,3,3,1) 50%, rgba(87,182,204,1) 85%);
     border-radius: 8px;
     padding: 16px 0px 0px 0px;
 }
@@ -45,7 +45,7 @@ body {
 }
 
 .library {
-    background: linear-gradient(90deg, rgba(92,3,3,1) 0%, rgba(157,38,73,1) 48%, rgba(87,182,204,1) 100%);
+    background: linear-gradient(19deg, rgba(144,21,21,1) 15%, rgba(92,3,3,1) 50%, rgba(87,182,204,1) 85%);
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
@@ -184,7 +184,7 @@ body {
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(90deg, rgba(92,3,3,1) 0%, rgba(157,38,73,1) 48%, rgba(87,182,204,1) 100%);
+    background: linear-gradient(19deg, rgba(144,21,21,1) 15%, rgba(92,3,3,1) 50%, rgba(87,182,204,1) 85%);
     padding: 15px 40px;
     margin: 0px 65px 5px 10px;
     display: flex;
