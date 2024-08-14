@@ -9,7 +9,7 @@
 
  > ℹ️ **NOTE:** Este é um repositório desenvolvido durante os meus estudos da imersão Spotify da [ALURA](https://www.alura.com.br/)
 
-✅ Bem vindos! Este é um projeto com o objetivo de criar um site modelo Spotify utilizando html, css, javascript e react. Pude aprender a manipular várias tags, textos e cores, introduzir técnicas, além das que já estavam sendo utilizadas na imersão, foi bastante desafiante e muito enriquecedor, minha gratidão a Deus e a Alura pela oportunidade.
+✅ Bem vindos! Este é um projeto com o objetivo de criar um site modelo Spotify utilizando html, css, javascript e react. Pude aprender a manipular várias tags, textos e cores, introduzir técnicas, além das que já estavam sendo utilizadas na imersão, foi bastante desafiante e muito enriquecedor. Minha gratidão a Deus e a Alura pela oportunidade.
 
 ## 💻 Tecnologias utilizadas no projeto
 
