@@ -1,7 +1,7 @@
 <p align="center">
 <img 
     src="src/assets/img/img-spotify-imersão-frontend.png"
-    width="300"
+    width="500"
 />
 </p>
 
