@@ -22,10 +22,10 @@
 - [Vercel](https://vercel.com/)
 
 ## ✔ Repositório no Github
-https://github.com/VictorSamuraiWol/project-spotify-imersao-alura
+🔗 https://github.com/VictorSamuraiWol/project-spotify-imersao-alura
 
 ## ✔ Deploy no Vercel
-https://project-spotify-imersao-alura.vercel.app/
+🔗 https://project-spotify-imersao-alura.vercel.app/
 
 ## 👨‍💻 Estudante Front End e AWS Cloud Computing
 
