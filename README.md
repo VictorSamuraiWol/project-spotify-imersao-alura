@@ -30,8 +30,8 @@
 - [Github](https://github.com/)
 - [Vercel](https://vercel.com/)
 
-## 👨‍💻 AWS Certified Cloud Practitioner, AWS Cloud Computing and Front-End Student
-
+## <img src="src/assets/img/icone-wolverine-sem-fundo.png" width="50" /> AWS Certified Cloud Practitioner, AWS Cloud Computing and Front-End Student 
+<br>
 <p>
     <img 
       align=left 
@@ -53,7 +53,7 @@
     &nbsp;|&nbsp;
     </p>
 </p>
-<br/><br/>
+<br/>
 
 ---
 
