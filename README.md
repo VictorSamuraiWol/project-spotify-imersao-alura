@@ -30,7 +30,7 @@
 - [Github](https://github.com/)
 - [Vercel](https://vercel.com/)
 
-## 👨‍💻 Estudante Front End e AWS Cloud Computing
+## 👨‍💻 AWS Certified Cloud Practitioner, AWS Cloud Computing and Front-End Student
 
 <p>
     <img 
