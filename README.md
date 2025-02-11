@@ -1,6 +1,6 @@
 <p align="center">
 <img 
-    src="src/assets/img/img-spotify-imersão-frontend.png"
+    src="src/assets/icons/img-spotify-imersão-frontend.png"
     width="800"
     style="border: 1px solid red; border-radius:5px"
 />
