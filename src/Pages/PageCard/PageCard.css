@@ -1,0 +1,29 @@
+.page-card-class {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    height: 80vh;
+    padding: 6px;
+    margin: 12px 20px 0px 320px;
+    border: 1px solid var(--bg-components);
+    border-radius: 16px;
+}
+
+.page-card-img-class {
+    height: 700px;
+    width: 500px;
+    border-radius: 16px;
+}
+
+.page-card-class h1 {
+    font-size: 36px;
+    text-shadow: 3px 3px 3px black;
+}
+
+.page-card-class p {
+    width: 80%;
+    text-align: justify;
+    font-size: 18px;
+    text-shadow: 1px 1px 2px black;
+}

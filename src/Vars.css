@@ -1,0 +1,17 @@
+:root {
+    /* FONT */
+    --font-dm-sans: "DM Sans", sans-serif;
+
+    /* COLORS */
+    --bg-icon: #b3b3b3;
+    --bg-arrow-color: black;
+
+    /* GENERAL COLORS */
+    --bg-full: #57b6cc;
+    --bg-components: maroon;
+    --bg-subcomponents: black;
+    --bg-subcomponents-effects: azure;
+    --color-words-button: azure;
+    --color-words-cards: black;
+    --color-words: turquoise;
+}

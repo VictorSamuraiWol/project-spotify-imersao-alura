@@ -1,0 +1,27 @@
+.cards {
+  position: relative;
+  width: 220px;
+  height: 200px;
+  overflow: hidden;
+  border-radius: 8px;
+}
+  
+.cards span {
+  padding: 16px;
+  position: absolute;
+  font-size: 24px;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px black;
+}
+
+.dynamicCardsClass {
+  transform: scale(1.1);
+}
+
+.dynamicImgsClass {
+  transform: rotate(-25deg) translate(7%, -2%);
+}
+
+.imgStyle {
+    transform: rotate(25deg) translate(17%, -2%);
+}
