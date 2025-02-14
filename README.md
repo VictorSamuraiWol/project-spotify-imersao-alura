@@ -8,7 +8,7 @@
 
 # Projeto site modelo Spotify
 
- > ℹ️ **NOTE:** Este é um repositório desenvolvido durante os meus estudos da imersão Spotify da [ALURA](https://www.alura.com.br/)
+ > ℹ️ **NOTE:** Este é um repositório desenvolvido durante os meus estudos da imersão Spotify 1ª e 2ª edições da [ALURA](https://www.alura.com.br/)
 
 ## ✨ Features
 ✅ Bem vindos! Este é um projeto com o objetivo de criar um site modelo Spotify utilizando html, css, javascript e react. Pude aprender a manipular várias tags, textos e cores, introduzir técnicas, além das que já estavam sendo utilizadas na imersão, foi bastante desafiante e muito enriquecedor. Minha gratidão a Deus e a Alura pela oportunidade.
@@ -30,7 +30,7 @@
 - [Github](https://github.com/)
 - [Vercel](https://vercel.com/)
 
-## <img src="src/assets/img/icone-wolverine-sem-fundo.png" width="50" /> AWS Certified Cloud Practitioner, AWS Cloud Computing and Front-End Student 
+## <img src="src/assets/icons/icone-wolverine-sem-fundo.png" width="50" /> AWS Certified Cloud Practitioner, AWS Cloud Computing and Front-End Student 
 <br>
 <p>
     <img 

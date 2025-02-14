@@ -16,8 +16,7 @@ function PageCard() {
 
 
     function dynamicPageCards() {   
-        
-        for(let i = 0; i <= heroesListContextAll.heroesListContext.length; i++) {
+        for(let i = 0; i <= heroesListContextAll.heroesListContext.length; i++) {            
             if (`${i}` === getHeroeId) {
                 setIdPageCard(heroesListContextAll.heroesListContext[i - 1].id)
                 setNamePageCard(heroesListContextAll.heroesListContext[i - 1].name)

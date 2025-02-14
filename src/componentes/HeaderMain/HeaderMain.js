@@ -113,6 +113,7 @@ return (
                         autoComplete='off'
                     />
                 </button>
+                <span id='messageSideInput' className='hidden' >WELLCOME!!! SEARCH HERE!</span>
             </div>
         
             <div className="header__login">

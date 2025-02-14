@@ -1,3 +1,13 @@
+.cardsList:hover {
+  transform: scale(1.1);
+  box-shadow: 3px 3px 1px var(--bg-full);
+  border-radius: 8px;
+}
+
+.cardsList:hover .imgStyle {
+  transform: rotate(-25deg) translate(7%, -2%);
+}
+
 .cards {
   position: relative;
   width: 220px;
@@ -12,14 +22,6 @@
   font-size: 24px;
   font-weight: 700;
   text-shadow: 2px 2px 2px black;
-}
-
-.dynamicCardsClass {
-  transform: scale(1.1);
-}
-
-.dynamicImgsClass {
-  transform: rotate(-25deg) translate(7%, -2%);
 }
 
 .imgStyle {

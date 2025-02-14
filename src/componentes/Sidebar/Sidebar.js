@@ -8,6 +8,19 @@ import plusIcon from '../../assets/icons/plus-icon.png'
 import { Link } from 'react-router-dom';
 
 const Sidebar = () => {
+    
+    function focusSearch() {
+        const focusSearchInput = document.querySelector('#search-input')
+        const messageSideInput = document.querySelector('#messageSideInput')
+        focusSearchInput?.focus()
+
+        messageSideInput?.classList.add('visible')
+        setTimeout(() => {
+            messageSideInput?.classList.remove('visible')
+        }, 3000)
+
+    }
+
     return (
         <div className="sidebar">
             <nav className="sidebar__navigation">
@@ -22,16 +35,18 @@ const Sidebar = () => {
                             <img src={homeIcon} alt='home icon' id='iconHome' />
                         </Link>
                         <Link to='/'>
-                            <span>Home</span>
+                            <span id='textHome'>Home</span>
                         </Link>
                     </li>
                     <li className="sidebar__home__search__library">
-                        <a href="">
-                            <img src={searchIcon} alt='search icon' id='iconSearch' />
-                        </a>
-                        <a href="">
-                            <span>Search</span>
-                        </a>
+                        <img 
+                            onClick={focusSearch} 
+                            src={searchIcon} 
+                            alt='search icon' 
+                            id='iconSearch' 
+                        />
+                        <span 
+                            onClick={focusSearch} id='textSearch'>Search</span>
                     </li>
                 </ul>
             </nav>
@@ -42,9 +57,7 @@ const Sidebar = () => {
                         <img src={libraryIcon} alt='library icon' id='iconLibrary' />
                         <span>Library</span>
                     </button>
-                    <a href="">
-                        <img src={plusIcon} alt='plus icon' id='iconPlus' />
-                    </a>
+                    <img src={plusIcon} alt='plus icon' id='iconPlus' />
                 </div>
 
                 <section className="section-list">
@@ -57,9 +70,7 @@ const Sidebar = () => {
                     </div>
                 </section>
 
-                <div className="cookies">
-                    <a href="">Cookies</a>
-                </div>
+                <span className="cookies">Cookies</span>
 
                 <div className="languages">
                     <button className="languages__button">
