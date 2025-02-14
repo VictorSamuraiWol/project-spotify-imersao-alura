@@ -6,14 +6,11 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom';
 import PageBase from './Pages/PageBase';
 import PageMain from './Pages/PageMain';
 import PageCard from './Pages/PageCard';
+import PageNotFound from './Pages/PageNotFound';
+//npx json-server ./src/api-superHeroes/superHeroes.json --port 3001
 
 function AppRoutes() {
   return (
-    // <div>
-    //   <Sidebar />
-    //   <HeaderMain />
-    //   <Footer/>
-    // </div>
     <BrowserRouter>
       <Routes>
 
@@ -22,7 +19,7 @@ function AppRoutes() {
           <Route path='/page-card' element={<PageCard />} />
         </Route>
         
-        <Route path='/page-not-found' element={<PageBase />} />
+        <Route path='*' element={<PageNotFound />} />
         
       </Routes>
     </BrowserRouter>

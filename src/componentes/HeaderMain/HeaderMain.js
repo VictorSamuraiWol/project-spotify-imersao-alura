@@ -5,7 +5,6 @@ import smallLeft from '../../assets/icons/small-left.png';
 import search from '../../assets/icons/search.png';
 import simbol from '../../assets/icons/png-superHero.png'
 import Cards from './Cards/Cards';
-//npx json-server ./src/api-superHeroes/superHeroes.json --port 3001
 
 const HeaderMain = (setGetHeroeId) => {
 
