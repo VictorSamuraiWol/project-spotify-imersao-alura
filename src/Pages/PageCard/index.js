@@ -3,10 +3,11 @@ import './PageCard.css'
 import { useEffect, useState } from 'react';
 
 function PageCard() {
-
+    // Obtém o ID do herói selecionado e a lista de heróis do contexto da rota
     const { getHeroeId } = useOutletContext(); 
     const { heroesListContextAll } = useOutletContext();
 
+    // Estados para armazenar os dados do herói selecionado
     const [idPageCard, setIdPageCard] = useState('');
     const [namePageCard, setNamePageCard] = useState('');
     const [imgPageCard, setImgPageCard] = useState('');
@@ -14,7 +15,7 @@ function PageCard() {
     const [colorTextPageCard, setColorTextPageCard] = useState('');
     const [backgroudPageCard, setBackgroundPageCard] = useState('');
 
-
+    // Função para buscar os dados do herói correspondente ao ID selecionado
     function dynamicPageCards() {   
         for(let i = 0; i <= heroesListContextAll.heroesListContext.length; i++) {            
             if (`${i}` === getHeroeId) {
@@ -29,6 +30,7 @@ function PageCard() {
         
     }
 
+    // Executa a função ao carregar o componente
     useEffect(() => {
         dynamicPageCards();
     }, []);
@@ -37,20 +39,20 @@ function PageCard() {
         <div
             className='page-card-class'
             key={idPageCard}
-            style={{ background: backgroudPageCard }}
+            style={{ background: backgroudPageCard }} // Aplica o fundo dinâmico
         >
             <img 
                 className='page-card-img-class' 
                 src={imgPageCard} 
-                alt={namePageCard}
+                alt={namePageCard} // Define o nome como texto alternativo
             />
             <h1 
-                style={{ color: `${colorTextPageCard}` }}
+                style={{ color: `${colorTextPageCard}` }} // Define a cor do texto
                 className=''>{namePageCard}
             </h1>
             <p 
                 className=''
-                style={{ color: `${colorTextPageCard}` }}
+                style={{ color: `${colorTextPageCard}` }} // Define a cor do texto da descrição
             >
                 {descriptionPageCard}
             </p>
@@ -58,4 +60,4 @@ function PageCard() {
     )
 }
 
-export default PageCard
+export default PageCard // Exporta o componente
