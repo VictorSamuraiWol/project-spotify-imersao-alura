@@ -29,7 +29,7 @@ const Sidebar = () => {
                         <img src={logoSpotify} alt="Spotify icon"/>
                     </Link>
                 </div>
-                <ul>
+                <ul className='sidebar__navigation__home__search'>
                     <li className="sidebar__home__search__library">
                         <Link to='/'>
                             <img src={homeIcon} alt='home icon' id='iconHome' />

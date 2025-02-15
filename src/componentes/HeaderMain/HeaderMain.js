@@ -4,7 +4,9 @@ import smallRight from '../../assets/icons/small-right.png';
 import smallLeft from '../../assets/icons/small-left.png';
 import search from '../../assets/icons/search.png';
 import simbol from '../../assets/icons/png-superHero.png'
+import hamburgerMenu from '../../assets/icons/hamburgerMenu.png'
 import Cards from './Cards/Cards';
+
 
 const HeaderMain = (setGetHeroeId) => {
 
@@ -21,6 +23,8 @@ const superHeroCard = document.getElementById('superHero-card');
 const superHeroName = document.getElementById("superHero-name");
 const descriptionHeroContainer = document.getElementById('descriptionHero'); 
 const superHeroDescription = document.getElementById("descriptionHeroSpan");
+const headerSubscribe = document.querySelector('.subscribe');
+const headerLogin = document.querySelector('.login')
 
 function requestApi(searchTerm) {   
     fetch("http://localhost:3001/superHeroes")
@@ -90,6 +94,20 @@ function outCard() {
 
 }
 
+function visibleHeaderLogin() {
+    if (headerSubscribe.style.display === '') {
+        headerSubscribe.setAttribute('style', 'display:flex')
+        headerLogin.setAttribute('style', 'display:flex')
+    } else if (headerSubscribe.style.display === 'flex') {
+        headerSubscribe.setAttribute('style', 'display:none')
+        headerLogin.setAttribute('style', 'display:none')        
+    } else if (headerSubscribe.style.display === 'none') {
+        headerSubscribe.setAttribute('style', 'display:flex')
+        headerLogin.setAttribute('style', 'display:flex')
+    } else {}
+
+}
+
 return (
     <div className="main-container">
         <nav className="header__navigation">
@@ -116,8 +134,15 @@ return (
             </div>
         
             <div className="header__login">
-                <button className="subscribe">Subscribe</button>
-                <button className="login">Login</button>
+                <img 
+                    onClick={visibleHeaderLogin} className='iconHambuger' 
+                    src={hamburgerMenu} 
+                    alt='iconHamburgerImage' 
+                />
+                <div className='buttonsHeader'>
+                    <button className="subscribe visible">Subscribe</button>
+                    <button className="login visible">Login</button>
+                </div>
             </div>
         </nav>
     
