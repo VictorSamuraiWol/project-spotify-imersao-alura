@@ -207,41 +207,34 @@ main {
 }
 
 #result-superHero {
-  width: 100%;
   display: flex;
   justify-content: space-between;
-  gap: 50px;
-  padding: 20px 40px;
+  height: 80vh;
+  width: 100%;
+  padding: 20px 20px 20px 0px;
+  margin: 10px;
 }
 
 .superHero-cardClass {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 600px;
-  width: 500px;
+  gap: 8px;
+  height: 100%;
+  width: 50%;
   border-radius: 8px;   
-  isolation: isolate;
-  padding: 16px;
-  position: relative;
   transition: background-color 0.3s ease;
   cursor: pointer;
 }
 
 .card-img-class {
-  position: relative;
   height: 90%;
-  width: 100%;
-  padding-bottom: 115%;
-  margin-bottom: 10px;
+  width: 80%;
 }
 
 .superHero-img-class {
   height: 100%;
   width: 100%;
-  top: 0;
-  left: 0;
-  position: absolute;
   border-radius: 50%;
 }
 
@@ -264,11 +257,11 @@ main {
   position: relative;
 }
 
-.simbol img{
-  width: 90px;
+.simbol img {
+  width: 100px;
   position: absolute;
-  left: 400px;
-  top: 250px;
+  left: 80%;
+  bottom: 300px;
   padding: 18px;
   border-radius: 100%;
   font-size: 14px;
@@ -281,18 +274,31 @@ main {
   transform: translateY(-20px);
 }
 
-.descriptionHeroSpan-class {
-  display: flex;
-  justify-content: center;
-  width: 500px;
-  border: 1px solid var(--bg-subcomponents-effects);
-  border-radius: 5px;
-  padding: 10px;
-  color: var(--color-words);
-  background-color: var(--bg-subcomponents);
+#descriptionHero {
+  width: 50%;
+  padding-left: 8px;
+  padding-right: 16px;
   overflow-wrap:break-word;
   text-align: justify;
   text-indent: 30px;
   line-height: 30px;
   font-size: 1.3rem;
+  overflow: hidden;
+  position: relative;
+}
+
+.descriptionHeroSpan-class {
+  color: var(--color-words);
+  background-color: var(--bg-subcomponents);
+  position: absolute;
+  animation: scrollUp 10s linear infinite;
+}
+
+@keyframes scrollUp {
+  from {
+    transform: translateY(100%);
+  }
+  to {
+    transform: translateY(-100%);
+  }
 }

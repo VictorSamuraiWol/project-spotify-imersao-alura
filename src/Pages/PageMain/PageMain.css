@@ -72,6 +72,12 @@
     .cards {
         width: 180px;
     }
+
+    .simbol img {
+        left: 75%;
+        bottom: 300px;
+        width: 90px;
+    }
 }
 
 @media screen and (max-width: 860px) {
@@ -140,4 +146,30 @@
     .offer__list-item {
         grid-template-columns: 1fr 1fr;
     }
+
+    #result-superHero {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 80vh;
+        width: 100%;
+        padding: 0;
+        margin: 0;
+    }
+
+    .superHero-cardClass {
+        height: 50%;
+        width: 90%;
+        padding: 16px;
+    }
+
+    .simbol img {
+        display: none;
+    }
+
+    #descriptionHero {
+        width: 90%;
+    }
+
+
 }
