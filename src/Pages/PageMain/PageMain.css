@@ -170,7 +170,6 @@
     #descriptionHero {
         width: 90%;
         height: 90%;
-        display: flex;
     }
 
     .descriptionHeroSpan-class {
