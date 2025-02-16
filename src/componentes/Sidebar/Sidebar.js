@@ -10,14 +10,21 @@ import { Link } from 'react-router-dom';
 const Sidebar = () => {
     
     function focusSearch() {
+        const buttonHeaderSearch = document.querySelector('.header__search')
         const focusSearchInput = document.querySelector('#search-input')
         const messageSideInput = document.querySelector('#messageSideInput')
+
         focusSearchInput?.focus()
+
+        buttonHeaderSearch?.classList.add('header__search__highlightBorder')
+        setTimeout(() => {
+            buttonHeaderSearch?.classList.remove('header__search__highlightBorder')
+        }, 1000)
 
         messageSideInput?.classList.add('visible')
         setTimeout(() => {
             messageSideInput?.classList.remove('visible')
-        }, 3000)
+        }, 1000)
 
     }
 

@@ -119,7 +119,7 @@ return (
                 </button>
             
                 <button className="header__search">
-                    <img src={search} alt="" />
+                    <img id='headerSearchImg' src={search} alt="" />
                     <input 
                         id="search-input" 
                         type="text" 
@@ -129,7 +129,7 @@ return (
                         autoComplete='off'
                     />
                 </button>
-                <span id='messageSideInput' className='hidden' >WELLCOME!!! SEARCH HERE!</span>
+                <span id='messageSideInput' className='hidden' >SEARCH HERE!!!</span>
             </div>
         
             <div className="header__login">
