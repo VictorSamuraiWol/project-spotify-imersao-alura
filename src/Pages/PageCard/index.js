@@ -35,6 +35,12 @@ function PageCard() {
         dynamicPageCards();
     }, []);
 
+    // esconder o search do menu quando renderizar este componente
+    useEffect(() => {
+        const liSearch = document.querySelector('#liSearch')
+        liSearch.setAttribute('style', 'display:none')  
+    }, [])
+
     return(
         <div
             className='page-card-class'

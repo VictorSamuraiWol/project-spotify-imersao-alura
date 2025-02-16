@@ -110,7 +110,6 @@ main {
   font-weight: 700;
   padding: 16px; 
   max-width: max-content;
-
   border: 1px solid var(--color-words);
   border-radius: 40px;
 }

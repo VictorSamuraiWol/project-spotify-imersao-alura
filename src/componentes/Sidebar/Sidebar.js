@@ -38,7 +38,7 @@ const Sidebar = () => {
                             <span id='textHome'>Home</span>
                         </Link>
                     </li>
-                    <li className="sidebar__home__search__library">
+                    <li className="sidebar__home__search__library" id='liSearch'>
                         <img 
                             onClick={focusSearch} 
                             src={searchIcon} 

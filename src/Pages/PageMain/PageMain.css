@@ -38,30 +38,31 @@
         display: none;
         margin: 0;
         text-align: center;
+        font-weight: 800;
         padding: 4px;
-        border: 1px solid var(--bg-subcomponents);
+        border: 1px solid var(--bg-components);
         border-radius: 8px;
-        box-shadow: 2px 2px 1px var(--bg-subcomponents);
+        box-shadow: 2px 2px 1px var(--bg-components);
         color: var(--bg-subcomponents);
+
     }
 
     .header__login .login {
         display: none;
         color: var(--bg-subcomponents);
-        border: 1px solid var(--bg-subcomponents);
+        border: 1px solid var(--bg-components);
+    }
+
+    .main-container {
+        max-width: 80vw;
+        margin-left: 220px;
+        margin-right: 56px;
     }
 
     .offer__scroll-container {
         max-height: 55vh;
         margin: 24px;
         overflow: auto;
-    }
-
-    .main-container {
-        max-width: 80vw;
-        height: 80vh;
-        margin-left: 220px;
-        margin-right: 56px;
     }
 
     .offer__list-item {

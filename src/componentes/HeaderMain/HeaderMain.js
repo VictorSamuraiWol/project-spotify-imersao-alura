@@ -7,7 +7,6 @@ import simbol from '../../assets/icons/png-superHero.png'
 import hamburgerMenu from '../../assets/icons/hamburgerMenu.png'
 import Cards from './Cards/Cards';
 
-
 const HeaderMain = (setGetHeroeId) => {
 
 const [searchTerm, setSearchTerm] = useState("");

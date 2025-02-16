@@ -1,18 +1,30 @@
+/* SCROLL */
 .page-card-class {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 24px;
-    height: 80vh;
+    height: 85vh;
     padding: 6px;
     margin: 12px 20px 0px 320px;
     border: 1px solid var(--bg-components);
     border-radius: 16px;
+    overflow: auto;
 }
 
+.page-card-class::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.page-card-class::-webkit-scrollbar-thumb {
+    background-color: var(--color-words);
+}
+/* FIM SCROLL */
+
 .page-card-img-class {
-    height: 700px;
-    width: 500px;
+    height: 600px;
+    width: 400px;
     border-radius: 16px;
 }
 
@@ -26,4 +38,36 @@
     text-align: justify;
     font-size: 18px;
     text-shadow: 1px 1px 2px black;
+}
+
+/* Responsividade */
+@media screen and (max-width: 1100px) {
+    .page-card-class {
+        margin-left: 220px;
+        margin-right: 56px;
+    }
+
+}
+
+@media screen and (max-width: 860px) {
+    .page-card-class {
+        margin: 10px 56px 0 56px;
+    }
+
+}
+
+@media screen and (max-width: 580px) {
+    .page-card-img-class {
+        height: 400px;
+        width: 250px;
+    }
+    
+    .page-card-class h1 {
+        font-size: 28px;
+    }
+    
+    .page-card-class p {
+        font-size: 16px;
+    }
+  
 }
