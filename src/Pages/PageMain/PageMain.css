@@ -83,7 +83,7 @@
 @media screen and (max-width: 860px) {
     .sidebar {
         position: absolute;
-        top: 85%;
+        top: 95%;
         width: 100%;
     }
 
