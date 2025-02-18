@@ -1,6 +1,5 @@
 import './Cards.css'
 import { Link, useOutletContext } from 'react-router-dom';
-import illustrativeCard1 from '../../../assets/icons/icone-wolverine-sem-fundo.png'
 
 function Cards(setGetHeroeId) {
 
@@ -15,7 +14,7 @@ function Cards(setGetHeroeId) {
     return(            
         /* Creating dynamics cards */
         heroesListContextAll.heroesListContext.map((e) =>
-            <Link to='/page-card' key={e.id}>     
+            <Link to={`/page-card/${e.id}`} key={e.id}>     
                 <div
                     onClick={getIdContext}
                     id={e.id} 

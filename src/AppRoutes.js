@@ -17,7 +17,7 @@ function AppRoutes() {
         {/* Rota base com sub-rotas */}
         <Route path='/' element={<PageBase />}>
           <Route index element={<PageMain />} /> {/* Página inicial */}
-          <Route path='/page-card' element={<PageCard />} /> {/* Página de card */}
+          <Route path='/page-card/:id' element={<PageCard />} /> {/* Página de card */}
         </Route>
         
         {/* Rota para páginas não encontradas (404) */}

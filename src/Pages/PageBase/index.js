@@ -13,12 +13,19 @@ function PageBase() {
 
     // Efeito para buscar a lista de heróis da API ao carregar a página
     useEffect(() => {
-        const url = 'http://localhost:3001/superHeroes' // URL da API local
-        fetch(url)
-            .then(response => response.json()) // Converte a resposta para JSON
-            .then(data => setHeroesListContext(data)) // Atualiza o estado com os dados
-            .catch(error => console.log('Error: ', error)) // Captura e exibe erros    
-    }, []);
+        async function fetchData () {
+            try {
+                const url = 'http://localhost:3001/superHeroes' // URL da API local
+                const response = await fetch(url);
+                const data = await response.json();
+                setHeroesListContext(data); //atualiza o estado com os dados
+            } catch (error) {
+                console.error("Erro ao buscar dados:", error);
+            }
+        }
+        
+        fetchData();
+    }, []); // Executa apenas na montagem
 
     return(
         <>

@@ -1,4 +1,4 @@
-import { useOutletContext } from 'react-router-dom'
+import { useOutletContext, useParams } from 'react-router-dom'
 import './PageCard.css'
 import { useEffect, useState } from 'react';
 
@@ -7,6 +7,8 @@ function PageCard() {
     const { getHeroeId } = useOutletContext(); 
     const { heroesListContextAll } = useOutletContext();
 
+    const params = useParams();
+
     // Estados para armazenar os dados do herói selecionado
     const [idPageCard, setIdPageCard] = useState('');
     const [namePageCard, setNamePageCard] = useState('');
@@ -14,18 +16,29 @@ function PageCard() {
     const [descriptionPageCard, setDescriptionPageCard] = useState('');
     const [colorTextPageCard, setColorTextPageCard] = useState('');
     const [backgroudPageCard, setBackgroundPageCard] = useState('');
-
+       
     // Função para buscar os dados do herói correspondente ao ID selecionado
     function dynamicPageCards() {   
-        for(let i = 0; i <= heroesListContextAll.heroesListContext.length; i++) {            
-            if (`${i}` === getHeroeId) {
+        for(let i = 0; i <= heroesListContextAll.heroesListContext.length; i++) { 
+            const id = getHeroeId; 
+            if (`${i}` === id) {
                 setIdPageCard(heroesListContextAll.heroesListContext[i - 1].id)
                 setNamePageCard(heroesListContextAll.heroesListContext[i - 1].name)
                 setImgPageCard(heroesListContextAll.heroesListContext[i - 1].urlImg)
                 setDescriptionPageCard(heroesListContextAll.heroesListContext[i - 1].description)
                 setColorTextPageCard(heroesListContextAll.heroesListContext[i - 1].colorText)
                 setBackgroundPageCard(heroesListContextAll.heroesListContext[i - 1].backgroundHeroe)
-            } else {}           
+
+            } else if ((id === '') && (params.id) && (i === Number(params.id))) {
+                setIdPageCard(heroesListContextAll.heroesListContext[i - 1].id)
+                setNamePageCard(heroesListContextAll.heroesListContext[i - 1].name)
+                setImgPageCard(heroesListContextAll.heroesListContext[i - 1].urlImg)
+                setDescriptionPageCard(heroesListContextAll.heroesListContext[i - 1].description)
+                setColorTextPageCard(heroesListContextAll.heroesListContext[i - 1].colorText)
+                setBackgroundPageCard(heroesListContextAll.heroesListContext[i - 1].backgroundHeroe)
+
+            } 
+            else {}         
         }
         
     }
@@ -33,13 +46,11 @@ function PageCard() {
     // Executa a função ao carregar o componente
     useEffect(() => {
         dynamicPageCards();
-    }, []);
 
-    // esconder o search do menu quando renderizar este componente
-    useEffect(() => {
+        // esconder o search do menu quando renderizar este componente
         const liSearch = document.querySelector('#liSearch')
         liSearch.setAttribute('style', 'display:none')  
-    }, [])
+    }, [heroesListContextAll]);
 
     return(
         <div
@@ -49,12 +60,15 @@ function PageCard() {
         >
             <img 
                 className='page-card-img-class' 
-                src={imgPageCard} 
+                src={imgPageCard}
+                // src={heroesListContextAll.heroesListContext[0].urlImg}
                 alt={namePageCard} // Define o nome como texto alternativo
             />
             <h1 
                 style={{ color: `${colorTextPageCard}` }} // Define a cor do texto
-                className='namePageCardClass'>{namePageCard}
+                className='namePageCardClass'>
+                    {namePageCard}
+                    {/* {heroesListContext[Number(params.id - 1)].name} */}
             </h1>
             <p 
                 className='descriptionPageCardClass'
