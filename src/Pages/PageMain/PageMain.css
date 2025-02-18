@@ -127,6 +127,10 @@
     .list-containerClass {
         height: 75vh;
     }
+    
+    .list #greeting {
+        margin-bottom: 24px;
+    }
 
     .offer__list-item {
         grid-template-columns: 1fr 1fr 1fr;
