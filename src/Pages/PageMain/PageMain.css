@@ -153,6 +153,11 @@
         grid-template-columns: 1fr 1fr;
     }
 
+    .cards {
+        height: 180px;
+        width: 180px;
+    }
+
     #result-superHero {
         display: flex;
         flex-direction: column;
