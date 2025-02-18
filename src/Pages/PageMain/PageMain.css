@@ -47,10 +47,18 @@
 
     }
 
+    .header__login .subscribe:hover {
+        color: var(--color-words);
+    }
+
     .header__login .login {
         display: none;
         color: var(--bg-subcomponents);
         border: 1px solid var(--bg-components);
+    }
+        
+    .header__login .login:hover {
+        color: var(--color-words);
     }
 
     .main-container {

@@ -130,17 +130,16 @@ main {
 
 /* HOVER */
 .header__search:hover {
-    border: 1px solid var(--bg-full);
-  }
+  border: 1px solid var(--bg-full);
+}
   
-  .header__login .subscribe:hover {
-    transform: scale(1.04);
-    color: var(--color-words);
-  }
+.header__login .subscribe:hover {
+  transform: scale(1.04);
+}
   
-  .header__login .login:hover {
-    transform: scale(1.04);
-  }
+.header__login .login:hover {
+  transform: scale(1.04);
+}
 /* FIM HOVER */
 
 /* LIST */
