@@ -13,7 +13,7 @@ const Footer = () => {
             </div>
             <div className='contact'>
                 <img src={wolverine} alt="icon wolverine" />
-                <p>Desenvolvido por Victor Cardoso. Entre em contato pelo 
+                <p>Created by Victor Cardoso. Feel free to connect on  
                     <Link id='contactLink' to="https://www.linkedin.com/in/victor-cardoso-cloud-front/" target="_blank"> Linkedin.
                     </Link>
                 </p>
