@@ -78,6 +78,10 @@
         bottom: 300px;
         width: 90px;
     }
+
+    .disclaimer-premium .text {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 860px) {

@@ -8,6 +8,7 @@
     margin: 0px 65px 5px 10px;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     border: 1px solid var(--color-words);
 }
 
@@ -19,14 +20,32 @@
     color: var(--color-words);
     text-transform: uppercase;
     font-weight: 400;
-    font-size: 12px;
+    font-size: 10px;
     margin-bottom: 10px;
 }
 
 .disclaimer-premium .disclaimer-premium__subtitle {
     color: var(--color-words);
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 500;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-words);
+    font-size: 12px;
+}
+
+.contact img {
+    width: 50px;
+}
+
+#contactLink {
+    text-decoration: underline;
+    font-weight: bold;
 }
 
 .disclaimer-premium button {
