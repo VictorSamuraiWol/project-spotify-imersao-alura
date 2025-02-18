@@ -16,14 +16,13 @@ const Sidebar = () => {
 
         focusSearchInput?.focus()
 
+        messageSideInput?.classList.add('visible')
+        messageSideInput?.classList.remove('hidden')
         buttonHeaderSearch?.classList.add('header__search__highlightBorder')
         setTimeout(() => {
-            buttonHeaderSearch?.classList.remove('header__search__highlightBorder')
-        }, 1000)
-
-        messageSideInput?.classList.add('visible')
-        setTimeout(() => {
             messageSideInput?.classList.remove('visible')
+            messageSideInput?.classList.add('hidden')
+            buttonHeaderSearch?.classList.remove('header__search__highlightBorder')
         }, 1000)
 
     }
