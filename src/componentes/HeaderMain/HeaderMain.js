@@ -108,7 +108,7 @@ function visibleHeaderLogin() {
     } else if (headerSubscribe.style.display === 'none') {
         headerSubscribe.style.display = 'flex';
         headerLogin.style.display = 'flex';
-    } else {console.log('ok')}
+    } else {}
 
 }
 
