@@ -127,9 +127,9 @@
     .list-containerClass {
         height: 75vh;
     }
-    
+
     .list #greeting {
-        margin-bottom: 24px;
+        margin-bottom: 16px;
     }
 
     .offer__list-item {
