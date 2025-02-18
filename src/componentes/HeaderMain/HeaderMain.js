@@ -10,7 +10,7 @@ import IllustrativesCards from './IllustrativesCards/IllustrativesCards';
 import { useOutletContext } from 'react-router-dom';
 
 const HeaderMain = (setGetHeroeId) => {
-    
+
 const { heroesListContextAll } = useOutletContext();
 
 const [searchTerm, setSearchTerm] = useState("");
@@ -154,7 +154,9 @@ return (
                 <div className="list">
                     <h1 id="greeting">Hello!!!</h1>
                     <h2 className="session">Super Heroes</h2>
+                    <span id="alertGreetingSession" className='hidden'>Para melhor experiência, inicialize uma API com o arquivo "superHeroes.json" da pasta "api-superHeroes."</span>
                 </div>
+
 
                 <div className="offer__scroll-container">
                     <div className="offer__list">

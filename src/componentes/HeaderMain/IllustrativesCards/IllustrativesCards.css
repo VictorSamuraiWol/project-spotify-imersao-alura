@@ -1,0 +1,7 @@
+.visible {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}

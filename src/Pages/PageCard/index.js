@@ -54,11 +54,11 @@ function PageCard() {
             />
             <h1 
                 style={{ color: `${colorTextPageCard}` }} // Define a cor do texto
-                className=''>{namePageCard}
+                className='namePageCardClass'>{namePageCard}
             </h1>
             <p 
-                className=''
-                style={{ color: `${colorTextPageCard}` }} // Define a cor do texto da descrição
+                className='descriptionPageCardClass'
+                style={{ color: `${colorTextPageCard}`, border: `2px solid ${colorTextPageCard}` }} // Define a cor do texto da descrição
             >
                 {descriptionPageCard}
             </p>

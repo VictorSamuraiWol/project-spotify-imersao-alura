@@ -169,6 +169,12 @@ main {
   font-weight: 700;
 }
 
+#alertGreetingSession {
+  color: var(--bg-subcomponents-effects);
+  font-size: 32px;
+  font-weight: 700;
+}
+
 /* SCROLL */
 .offer__scroll-container {
   max-height: 55vh;

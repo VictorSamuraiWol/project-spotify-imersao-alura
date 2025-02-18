@@ -1,13 +1,32 @@
 import './IllustrativesCards.css'
 
 function IllustrativesCards() {
+
+    function alertIllustrativesCards() {
+        const greeting = document.querySelector('.list #greeting')
+        const session = document.querySelector('.list .session')
+        const alert = document.querySelector('#alertGreetingSession')
+        
+        greeting?.classList.add('hidden')
+        session?.classList.add('hidden')
+        alert?.classList.remove('hidden')
+
+        setTimeout(() => {
+            greeting?.classList.remove('hidden')
+            session?.classList.remove('hidden')
+            alert?.classList.add('hidden')
+        }, 5000)
+
+    }
+
     return (
         <>
             <div
+                onClick={alertIllustrativesCards}
                 id='ill1' 
                 className="cardsList"
             >
-                <div
+                <div                    
                     style={{color: 'blue', background: 'linear-gradient(19deg, rgba(2,0,166,1) 30%, rgba(172,0,0,1) 54%, rgba(99,0,0,1) 77%)'}}
                     className="cards"
                 >
@@ -16,6 +35,7 @@ function IllustrativesCards() {
                 </div>
             </div>
             <div
+                onClick={alertIllustrativesCards}
                 id='ill2' 
                 className="cardsList"
             >
@@ -28,6 +48,7 @@ function IllustrativesCards() {
                 </div>
             </div>
             <div
+                onClick={alertIllustrativesCards}
                 id='ill3' 
                 className="cardsList"
             >
@@ -40,6 +61,7 @@ function IllustrativesCards() {
                 </div>
             </div>
             <div
+                onClick={alertIllustrativesCards}
                 id='ill4' 
                 className="cardsList"
             >
@@ -52,6 +74,7 @@ function IllustrativesCards() {
                 </div>
             </div>
             <div
+                onClick={alertIllustrativesCards}
                 id='ill5' 
                 className="cardsList"
             >
