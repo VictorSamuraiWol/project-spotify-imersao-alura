@@ -44,11 +44,6 @@ main {
   cursor: pointer;
 }
 
-.header__login {
-  display: flex;
-  align-items: center;
-}
-
 .header__search {
   display: flex;
   align-items: center;
@@ -93,6 +88,15 @@ main {
   border: 1px solid var(--color-words-button);
   border-radius: 12px;
   box-shadow: 2px 2px 1px var(--bg-full);
+}
+
+.header__login {
+  display: flex;
+  align-items: center;
+}
+
+.header__login .iconHamburger {
+  display: none;
 }
 
 .buttonsHeader {
@@ -213,12 +217,12 @@ main {
   border-radius: 5px;
 }
 
-.hidden {
-  display: none;
-}
-
 .visible {
   display: flex;
+}
+
+.hidden {
+  display: none;
 }
 
 #result-superHero {

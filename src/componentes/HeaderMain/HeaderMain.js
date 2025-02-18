@@ -26,8 +26,6 @@ const superHeroCard = document.getElementById('superHero-card');
 const superHeroName = document.getElementById("superHero-name");
 const descriptionHeroContainer = document.getElementById('descriptionHero'); 
 const superHeroDescription = document.getElementById("descriptionHeroSpan");
-const headerSubscribe = document.querySelector('.subscribe');
-const headerLogin = document.querySelector('.login')
 
 function requestApi(searchTerm) {   
     fetch("http://localhost:3001/superHeroes")
@@ -98,16 +96,19 @@ function outCard() {
 }
 
 function visibleHeaderLogin() {
+    const headerSubscribe = document.querySelector('.subscribe');
+    const headerLogin = document.querySelector('.login')
+
     if (headerSubscribe.style.display === '') {
-        headerSubscribe.setAttribute('style', 'display:flex')
-        headerLogin.setAttribute('style', 'display:flex')
+        headerSubscribe.style.display = 'flex';
+        headerLogin.style.display = 'flex';
     } else if (headerSubscribe.style.display === 'flex') {
-        headerSubscribe.setAttribute('style', 'display:none')
-        headerLogin.setAttribute('style', 'display:none')        
+        headerSubscribe.style.display = 'none';
+        headerLogin.style.display = 'none';
     } else if (headerSubscribe.style.display === 'none') {
-        headerSubscribe.setAttribute('style', 'display:flex')
-        headerLogin.setAttribute('style', 'display:flex')
-    } else {}
+        headerSubscribe.style.display = 'flex';
+        headerLogin.style.display = 'flex';
+    } else {console.log('ok')}
 
 }
 
@@ -138,7 +139,8 @@ return (
         
             <div className="header__login">
                 <img 
-                    onClick={visibleHeaderLogin} className='iconHambuger' 
+                    onClick={visibleHeaderLogin} 
+                    className='iconHamburger' 
                     src={hamburgerMenu} 
                     alt='iconHamburgerImage' 
                 />

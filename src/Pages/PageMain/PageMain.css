@@ -14,7 +14,17 @@
     .header__search {
         width: 380px;
     }
-
+    
+    .header__login {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+    }
+    
+    .header__login .iconHamburger {
+        display: flex;
+    }
+    
     .buttonsHeader {
         display: flex;
         flex-direction: column;
@@ -22,16 +32,6 @@
         gap: 8px;
         position: absolute;
         margin-top: 50px;
-    }
-
-    .header__login {
-        display: flex;
-        flex-direction: column;
-        gap: 12px;
-    }
-
-    .header__login img {
-        display: flex;
     }
 
     .header__login .subscribe {
@@ -151,7 +151,6 @@
     .cards {
         width: 160px;
     }
-
 
 }
 
