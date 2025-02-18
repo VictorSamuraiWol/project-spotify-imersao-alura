@@ -173,6 +173,10 @@
         margin-bottom: 16px;
     }
 
+    #alertGreetingSession {
+        font-size: 16px;
+    }
+
     .offer__list-item {
         grid-template-columns: 1fr 1fr;
     }
