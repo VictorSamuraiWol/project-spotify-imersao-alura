@@ -6,6 +6,7 @@ import { useEffect } from 'react'
 function PageMain() {
     // Obtém a função setGetHeroeId do contexto da rota 
     const { setGetHeroeId } = useOutletContext()
+    const { heroesListContextAll } = useOutletContext()
 
     // aparecer o search do menu quando renderizar este componente
     useEffect(() => {
@@ -15,7 +16,10 @@ function PageMain() {
 
     return(
         // Renderiza o componente HeaderMain e passa a função setGetHeroeId como propriedade
-        <HeaderMain setGetHeroeId={setGetHeroeId} />
+        <HeaderMain
+            setGetHeroeId={setGetHeroeId}
+            heroesListContextAll={heroesListContextAll}
+        />
     )
 }
 

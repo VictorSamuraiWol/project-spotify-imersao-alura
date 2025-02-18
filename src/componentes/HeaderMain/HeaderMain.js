@@ -6,8 +6,12 @@ import search from '../../assets/icons/search.png';
 import simbol from '../../assets/icons/png-superHero.png'
 import hamburgerMenu from '../../assets/icons/hamburgerMenu.png'
 import Cards from './Cards/Cards';
+import IllustrativesCards from './IllustrativesCards/IllustrativesCards';
+import { useOutletContext } from 'react-router-dom';
 
 const HeaderMain = (setGetHeroeId) => {
+    
+const { heroesListContextAll } = useOutletContext();
 
 const [searchTerm, setSearchTerm] = useState("");
 const [imgCard, setImgCard] = useState("");
@@ -28,13 +32,13 @@ const headerLogin = document.querySelector('.login')
 function requestApi(searchTerm) {   
     fetch("http://localhost:3001/superHeroes")
         .then(response => response.json())
-        .then(data => {
+        .then(data => {       
             const result = data.filter(hero => 
             hero.name.toLowerCase().includes(searchTerm)
-           
-        );
+            )
             data.map(hero => {
                 if (hero.name.toLowerCase().includes(searchTerm)) {
+                    
                     setImgCard(hero.urlImg)
                     setIdCard(hero.id)
                     setbackgroundHeroeCard(hero.backgroundHeroe)
@@ -155,7 +159,8 @@ return (
                 <div className="offer__scroll-container">
                     <div className="offer__list">
                         <section className="offer__list-item">
-                            <Cards setGetHeroeId={setGetHeroeId} />
+                            {(heroesListContextAll.heroesListContext.length === 0) && <IllustrativesCards />}
+                            {heroesListContextAll && <Cards setGetHeroeId={setGetHeroeId} />}
                         </section>
                     </div>
                 </div>

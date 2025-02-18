@@ -192,6 +192,7 @@ main {
   justify-items: center;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   gap: 16px;
+  padding: 12px;
   margin-bottom: 16px;
   display: grid;
   gap: 16px;
