@@ -44,7 +44,7 @@
         border-radius: 8px;
         box-shadow: 2px 2px 1px var(--bg-components);
         color: var(--bg-subcomponents);
-
+        background-color: var(--color-words-button);
     }
 
     .header__login .subscribe:hover {
@@ -181,8 +181,8 @@
     }
 
     .cards {
-        height: 180px;
-        width: 180px;
+        height: 160px;
+        width: 160px;
     }
 
     #result-superHero {
